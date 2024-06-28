@@ -1,0 +1,174 @@
+body{
+    background-color: aliceblue;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.header{
+    height: 30%;
+    background-color: bisque;
+}
+
+.content{
+    height: 50%;
+    margin-bottom: -400px; 
+}
+
+.content > h1{
+    margin-left: 133px;
+    margin-bottom: 15px;
+    margin-top: 75px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-for-img {
+    height: 300px;
+    width: auto;
+    position: relative;
+    box-shadow: 0px 0px 8px black;
+}
+
+.container-for-img img{
+    height: 100%;
+    width: 100%;
+}
+ 
+.container-for-img figcaption{
+    position: absolute;
+    font-size: 1.6rem;
+    top: 89%;
+    left: 13%;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+
+.about{
+    width: 600px;
+    height: 200px;
+    padding-left: 10px;
+    box-shadow: 0px 0px 17px black;
+    background-color: whitesmoke;
+ }
+
+.cards{
+    display: grid;
+    grid-template: 480px 480px 480px / 480px 480px 480px;
+    gap: 100px;
+}
+
+.card{    
+    box-shadow: 0px 0px 8px black;
+}
+
+.pic{
+    height: 40%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 140px;
+    font-size: 2rem;
+}
+
+.card p{
+    margin-left: 30px;
+}
+
+.footer{
+    height: 20%;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-for-contact{
+    padding-left: 300px;
+    padding-top: 0;
+    margin-top: 50px;
+}
+
+.container-for-contact h1{
+    margin-top: 0;
+}
+
+.container-for-contact a img{
+    height: 35px;
+    width: auto;
+    margin-top: 26px;
+    margin-right: 15px;
+}
+
+#twitter{
+    height: 32px;
+    width: auto;
+}
+
+#number>img, #mail>img{
+    height: 30px;
+    width: auto;
+}
+#number, #mail{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+#mail{
+    margin-top: -18px;
+}
+
+.container-for-img-footer > img{
+    height: auto;
+    width: 500px;
+    margin-top: 50px;
+    margin-right: 500px;
+    margin-bottom: 14px;
+}
+
+h3{
+    margin-left: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+a{
+    text-decoration: none;
+ }
+ a:visited{
+    color: violet;
+ }
+
+ @media (max-width: 800px){    
+    
+    .cards{
+        grid-template: 480px 480px 480px 480px / 480px 480px;
+        margin-left: 600px;
+    }
+ } 
+
+ @media (max-width: 320px){  
+    .cards{
+        grid-template: 480px 480px 480px 480px 480px / 480px;
+    }
+    
+ }
